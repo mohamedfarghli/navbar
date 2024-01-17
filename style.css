@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  header {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+  }
+  
+  header::after {
+    content: " ";
+    background-image: url("https://i.imgur.com/5xAkZg9.jpg");
+    background-position: left;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.7;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 77px;
+    z-index: 100;
+    padding: 0 28px;
+    box-sizing: border-box;
+  }
+  
+  #logo {
+    width: 40px;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  nav {
+    background-color: #fff;
+  }
+  
+  #top-menu > li {
+    display: inline-block;
+    margin-right: 24px;
+  }
+  
+  #top-menu li a {
+    color: #000;
+    font-weight: 600;
+    font-size: 14px;
+  }
+  
+  #top-menu i {
+    padding-left: 4px;
+  }
+  
+  #top-menu > li:last-of-type a {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
+    background-color: rgb(170, 210, 54);
+    padding: 7.5px 34px;
+    border: 0;
+    border-radius: 4px;
+    margin-right: 16px;
+  }
+  
+  #top-menu > li:last-of-type {
+    margin: 0;
+  }
+  
+  #drop-menu {
+    position: relative;
+  }
+  
+  #dropdown-menu {
+    display: none;
+    box-shadow: 0 2px 5px #ccc;
+    border-top: 2px solid rgb(170, 210, 54);
+    position: absolute;
+    padding: 20px;
+    right: 0;
+    width: 150px;
+    background-color: #fff;
+  }
+  
+  #drop-menu:hover #dropdown-menu {
+    display: block;
+  }
+  
+  #dropdown-menu li {
+    border-bottom: 1px solid #ccc;
+    padding: 4px;
+  }
+  
+  #dropdown-menu li a {
+    font-size: 1.1em;
+    font-weight: 100;
+  }
+  
